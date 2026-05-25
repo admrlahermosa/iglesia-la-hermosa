@@ -4,9 +4,9 @@ const LOGO_SRC = "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1B
 
 // ─── Constants ─────────────────────────────────────────────────────────────
 const GROUPS = [
-  { id:"0-3",  label:"Semillitas",      emoji:"🌱", color:"#f9a03f", bg:"#fff8f0" },
-  { id:"4-7",  label:"Exploradorcitos", emoji:"🚀", color:"#4fc3f7", bg:"#f0faff" },
-  { id:"8-12", label:"Aventureros",     emoji:"⚡", color:"#a78bfa", bg:"#f5f0ff" },
+  { id:"1-3",  label:"Semillitas",      emoji:"🌱", color:"#f9a03f", bg:"#fff8f0" },
+  { id:"4-6",  label:"Exploradorcitos", emoji:"🚀", color:"#4fc3f7", bg:"#f0faff" },
+  { id:"7-12", label:"Aventureros",     emoji:"⚡", color:"#a78bfa", bg:"#f5f0ff" },
 ];
 function groupOf(c){ const a=Number(c.age); if(a<=3)return GROUPS[0]; if(a<=7)return GROUPS[1]; return GROUPS[2]; }
 function todayStr(){ return new Date().toISOString().slice(0,10); }
